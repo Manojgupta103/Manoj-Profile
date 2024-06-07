@@ -1,9 +1,18 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useState } from 'react'
 import "./Navbar.css"
-export default function Navbar() {
+import MobileNav from './MobileNav/MobileNav';
+
+const Navbar = () => {
+    const [openMenu, setOpenMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setOpenMenu(!openMenu);
+    };
+
   return (
     <>
+    <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
     <nav className='nav-wrapper'>
       <div className='nav-content'>
         <img className='logo' src="src\assets\images\logo.png" alt='Logo' />
@@ -22,9 +31,9 @@ export default function Navbar() {
           </li>
           <button className='contact-btn' onClick={() =>{} }>Hire Me</button>
         </ul>
-        <button className="menu-btn" onClick={() =>{} } >
+        <button className="menu-btn" onClick={toggleMenu } >
           <span className={"material-symbols-outlined"} style={{fontSize: "1.8rem"}}>
-            menu
+         {openMenu ? "close" : "menu"}
           </span>
         </button>
       </div>
@@ -32,3 +41,5 @@ export default function Navbar() {
     </>
   )
 }
+
+export default Navbar;
