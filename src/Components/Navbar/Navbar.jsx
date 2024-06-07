@@ -6,7 +6,7 @@ export default function Navbar() {
     <>
     <nav className='nav-wrapper'>
       <div className='nav-content'>
-        <img className='logo' src="src\assets\images\user.png" alt='Logo' />
+        <img className='logo' src="src\assets\images\logo.png" alt='Logo' />
         <ul>
           <li>
             <a className='menu-items'>Home</a>
@@ -22,6 +22,11 @@ export default function Navbar() {
           </li>
           <button className='contact-btn' onClick={() =>{} }>Hire Me</button>
         </ul>
+        <button className="menu-btn" onClick={() =>{} } >
+          <span className={"material-symbols-outlined"} style={{fontSize: "1.8rem"}}>
+            menu
+          </span>
+        </button>
       </div>
        </nav>
     </>
