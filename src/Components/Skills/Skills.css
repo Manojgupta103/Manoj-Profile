@@ -68,7 +68,7 @@
 
     .skills, 
     .skills-info {
-        width: 100%;
+        width: -webkit-fill-available;
 }
      .skills-container h5 {
         font-size: 1.3rem;
