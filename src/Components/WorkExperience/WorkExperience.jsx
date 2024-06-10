@@ -1,9 +1,14 @@
 import './WorkExperience.css'
 import { WORK_EXPERIENCE } from "../../Utils/data";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
+<<<<<<< Updated upstream
 import { useRef } from 'react';
 import Slider from 'react-slick';
 import { MaterialSymbol } from 'react-material-symbols';
+=======
+import { useRef } from "react";
+import Slider from "react-slick";
+>>>>>>> Stashed changes
 
 const WorkExperience = () => {
     const sliderRef =useRef();
