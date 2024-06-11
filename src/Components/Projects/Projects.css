@@ -1,0 +1,67 @@
+.projects-container {
+    margin: 4rem 0;
+    position: relative;
+}
+
+.projects-container h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.arrow-left, 
+.arrow-right {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6751b9;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    background:#130f2a;
+    position: absolute;
+    top: 55%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.arrow-left span,
+.arrow-right span {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+
+    right: -2rem;
+}
+
+@media (max-width: 1025px) {
+    .arrow-right {
+        right: 0rem;
+    }
+
+    .arrow-left {
+        left: 0rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .Projects-container h5 {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;  
+    }
+    
+    .arrow-left {
+        left: -1rem;
+}
+
+    .arrow-right {
+        right: -1rem;
+    }
+}

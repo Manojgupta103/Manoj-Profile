@@ -78,3 +78,44 @@ export const WORK_EXPERIENCE = [
     ]
     },
 ];
+
+export const PROJECTS = [
+    {
+        title: "E-commerce Website",
+        description: "Developed a fully functional e-commerce website using React.js, Node.js, and MongoDB. Implemented features such as product listing, shopping cart, user authentication, and payment integration.",
+        technologies: ["React.js", " Node.js", " MongoDB"],
+        responsibilities: [
+            "Designed and implemented the front-end user interface using React.js",
+            "Developed the back-end server using Node.js and Express.js",
+            "Integrated MongoDB for data storage and retrieval",
+            "Implemented user authentication and authorization functionality",
+            "Integrated payment gateway for secure online transactions",
+            "Performed testing and debugging to ensure a smooth user experience",
+        ],
+    },
+    {
+        title: "Task Management App",
+        description: "Created a task management application using React.js and Firebase. Users can create, update, and delete tasks, set due dates, and track progress.",
+        technologies: ["React.js ", " Firebase"],
+        responsibilities: [
+            "Designed and developed the user interface using React.js components",
+            "Implemented Firebase Firestore for real-time data storage",
+            "Implemented CRUD operations for tasks",
+            "Added functionality to set due dates and track task progress",
+            "Implemented user authentication and authorization",
+            "Performed testing and debugging to ensure application stability",
+        ],
+    },
+    {
+        title: "Weather App",
+        description: "Built a weather application using React.js and an API to fetch weather data. Users can search for a location and view the current weather conditions.",
+        technologies: ["React.js", " API"],
+        responsibilities: [
+            "Designed and developed the user interface using React.js components",
+            "Implemented API integration to fetch weather data",
+            "Implemented search functionality to retrieve weather information for a specific location",
+            "Displayed weather data in a visually appealing manner",
+            "Performed testing and debugging to ensure accurate weather information",
+        ],
+    }
+];
